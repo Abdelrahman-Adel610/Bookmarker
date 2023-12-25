@@ -92,10 +92,3 @@ height: 1.5rem;
     right: 1rem;
     cursor: pointer;
 }
-@media screen and (max-width: 700px) {
-.msg
-{
-    width: 35rem;
-    height: 30rem;
-}
-}
