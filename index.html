@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" href="Photos/favicon-16x16.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+    <header class="header d-flex justify-content-center mb-5">
+         <h1 class="text-center mt-5 position-relative d-inline-block">Bookmarker</h1>
+    </header>
+    <main class="border-1 border-start-0 border-end-0 border-bottom-0 d-flex justify-content-center flex-wrap">
+        <h2 class="text-center my-3">
+            <i class="fa-solid fa-bookmark lf"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark r"></i>
+        </h2>
+        <label for="siteName" class="w-100 my-4 fs-6">
+            <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name
+            <input oninput="CheckSiteName()" type="text" id="siteName" name="siteName" class="form-control w-100 my-2 " placeholder="Bookmark Name">
+        </label>
+        <label for="siteURL" class="w-100  fs-6">
+            <i class="fa-solid fa-link pe-2"></i> Site URL
+            <input type="text" id="siteURL" oninput="CheckURL()" name="siteURL" class="form-control w-100 my-2" placeholder="Website URL">
+        </label>
+        <button class="btn btn-primary my-3 py-2 px-5" onclick="Add()">Submit</button>
+        <table class="table text-center" id="table">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+<tbody id="myTable">
+
+</tbody>
+        </table>
+    </main>
+</div>
+<div class="warning justify-content-center align-items-center d-none position-fixed" id="MSG"> 
+<div class="msg p-4 container position-relative">
+    <i class="fa-solid fa-xmark close fs-3" id="XX"></i>
+<div class="dots my-2">
+    <i class="rounded-circle bg-danger d-inline-block mx-1"></i>
+    <i class="rounded-circle bg-warning d-inline-block mx-1"></i>
+    <i class="rounded-circle bg-success d-inline-block mx-1"></i>
+</div>
+<div class="head">
+<h2 class="fw-bold p-2">
+    Site Name or Url is not valid, Please follow the rules below :
+</h2>
+</div>
+<div class="insts">
+<span class="d-block my-2">
+<i class="fa-regular fa-circle-right p-2 text-danger"></i>Site name must contain at least 3 characters
+</span>
+<span class="d-block my-2 ">
+<i class="fa-regular fa-circle-right p-2 text-danger"></i>Site URL must be a valid one
+</span>
+</div>
+</div>
+</div>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

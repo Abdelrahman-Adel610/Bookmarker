@@ -1,0 +1,94 @@
+body
+{
+    background-color: rgba(41, 177, 170, 0.79);
+}
+.header
+{
+    font-family: 'Pacifico', cursive;
+}
+header h1::before
+{
+content: "";
+position: absolute;
+width: 100%;
+height: 30%;
+z-index: -1111;
+bottom: 0;
+left: 0;
+background-color: rgb(0, 132, 255);
+transition: .6s;
+}
+header:hover h1::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    z-index: -1111;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 132, 255);; 
+}
+main
+{
+    border-style: dashed;
+}
+main h2
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.47), rgba(0, 0, 255, 0.451));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.lf
+{
+color: rgba(0, 0, 0, 0.47);
+}
+.r
+{
+    color: rgba(0, 0, 255, 0.451);
+}
+
+main h2 ::before
+{
+    content:"" ;
+}
+.warning
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000056;
+}
+.msg
+{
+    position: absolute;
+    background-color:#FFF;
+    width: 35rem;
+    height: 17rem;
+}
+.dots i
+{
+width: 1.5rem;
+height: 1.5rem;
+}
+.warning h2
+{
+    font-size: 1.6rem;
+}
+.insts li
+{
+    color: red !important;
+}
+.insts span
+{
+    font-size: 1.3rem;
+}
+.close
+{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    cursor: pointer;
+}
